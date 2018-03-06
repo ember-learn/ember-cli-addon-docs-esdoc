@@ -1,0 +1,220 @@
+{
+  "jsonapi": {
+    "version": "1.0"
+  },
+  "data": [
+    {
+      "type": "module",
+      "id": "foo",
+      "attributes": {
+        "type": "module",
+        "file": "foo",
+        "functions": [],
+        "helpers": [],
+        "variables": []
+      },
+      "relationships": {
+        "classes": {
+          "data": [
+            {
+              "type": "class",
+              "id": "foo~Foo"
+            }
+          ]
+        },
+        "components": {
+          "data": []
+        }
+      }
+    }
+  ],
+  "included": [
+    {
+      "type": "class",
+      "id": "foo~Foo",
+      "attributes": {
+        "name": "Foo",
+        "file": "foo",
+        "exportType": "default",
+        "description": "A foo class\n\n```js\n\nfoo({\n  bar: 'baz'\n})\n```",
+        "lineNumber": 18,
+        "access": "public",
+        "isInterface": false,
+        "decorators": [
+          {
+            "name": "decorate",
+            "arguments": null
+          }
+        ],
+        "tags": [
+          {
+            "name": "anArbitraryTag",
+            "value": ""
+          }
+        ],
+        "fields": [
+          {
+            "name": "foo",
+            "description": "A field named foo",
+            "lineNumber": 22,
+            "access": "public",
+            "tags": [],
+            "file": "foo",
+            "type": "any",
+            "isStatic": false,
+            "decorators": []
+          },
+          {
+            "name": "bar",
+            "description": "A static decorated field named bar with a tag",
+            "lineNumber": 30,
+            "access": "public",
+            "tags": [
+              {
+                "name": "taggg",
+                "value": ""
+              }
+            ],
+            "file": "foo",
+            "type": "any",
+            "isStatic": true,
+            "decorators": [
+              {
+                "name": "decorate",
+                "arguments": null
+              }
+            ]
+          }
+        ],
+        "methods": [
+          {
+            "name": "corge",
+            "description": "A method named corge with a tag",
+            "lineNumber": 71,
+            "access": "public",
+            "tags": [],
+            "file": "foo",
+            "returns": {
+              "type": "string",
+              "description": "the corge return value",
+              "properties": []
+            },
+            "params": [
+              {
+                "nullable": null,
+                "spread": false,
+                "optional": false,
+                "name": "foo",
+                "description": "a foo param",
+                "type": "string"
+              },
+              {
+                "nullable": null,
+                "spread": false,
+                "optional": false,
+                "name": "bar",
+                "description": "a bar param",
+                "type": "number"
+              }
+            ],
+            "isAsync": false,
+            "isGenerator": false,
+            "type": "method",
+            "isStatic": false,
+            "decorators": []
+          },
+          {
+            "name": "grault",
+            "description": "An static async method named grault",
+            "lineNumber": 78,
+            "access": "public",
+            "tags": [],
+            "file": "foo",
+            "returns": null,
+            "params": [],
+            "isAsync": true,
+            "isGenerator": false,
+            "type": "method",
+            "isStatic": true,
+            "decorators": []
+          },
+          {
+            "name": "garply",
+            "description": "A generator method named garply",
+            "lineNumber": 85,
+            "access": "public",
+            "tags": [],
+            "file": "foo",
+            "returns": null,
+            "params": [],
+            "isAsync": false,
+            "isGenerator": true,
+            "type": "method",
+            "isStatic": false,
+            "decorators": []
+          }
+        ],
+        "accessors": [
+          {
+            "name": "baz",
+            "description": "An accessor named baz",
+            "lineNumber": 35,
+            "access": "public",
+            "tags": [],
+            "file": "foo",
+            "type": "any",
+            "isStatic": false,
+            "decorators": [],
+            "hasGetter": true,
+            "hasSetter": true
+          },
+          {
+            "name": "baz",
+            "description": "A static accessor named baz",
+            "lineNumber": 46,
+            "access": "public",
+            "tags": [],
+            "file": "foo",
+            "type": "any",
+            "isStatic": true,
+            "decorators": [],
+            "hasGetter": true,
+            "hasSetter": false
+          },
+          {
+            "name": "qux",
+            "description": "An accessor without a setter named qux",
+            "lineNumber": 53,
+            "access": "public",
+            "tags": [],
+            "file": "foo",
+            "type": "any",
+            "isStatic": false,
+            "decorators": [],
+            "hasGetter": true,
+            "hasSetter": false
+          },
+          {
+            "name": "quuz",
+            "description": "A set only accessor named quux",
+            "lineNumber": 60,
+            "access": "public",
+            "tags": [],
+            "file": "foo",
+            "type": "any",
+            "isStatic": false,
+            "decorators": [],
+            "hasGetter": false,
+            "hasSetter": true
+          }
+        ],
+        "parentClassId": null
+      },
+      "relationships": {
+        "parentClass": {
+          "data": null
+        }
+      }
+    }
+  ]
+}

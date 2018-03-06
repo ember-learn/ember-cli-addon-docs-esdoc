@@ -1,0 +1,66 @@
+{
+  "jsonapi": {
+    "version": "1.0"
+  },
+  "data": [
+    {
+      "type": "module",
+      "id": "helpers/foo",
+      "attributes": {
+        "type": "module",
+        "file": "helpers/foo",
+        "functions": [
+          {
+            "name": "helper",
+            "description": "",
+            "lineNumber": 7,
+            "access": "public",
+            "tags": [
+              {
+                "name": "function",
+                "value": "helper"
+              }
+            ],
+            "file": "helpers/foo",
+            "returns": {
+              "type": "string",
+              "description": "",
+              "properties": []
+            },
+            "params": [
+              {
+                "nullable": null,
+                "spread": false,
+                "optional": false,
+                "name": "bar",
+                "description": "a bar string",
+                "type": "string"
+              },
+              {
+                "nullable": null,
+                "spread": false,
+                "optional": false,
+                "name": "baz",
+                "description": "a baz number",
+                "type": "number"
+              }
+            ],
+            "isAsync": false,
+            "isGenerator": false,
+            "exportType": "named"
+          }
+        ],
+        "helpers": [],
+        "variables": []
+      },
+      "relationships": {
+        "classes": {
+          "data": []
+        },
+        "components": {
+          "data": []
+        }
+      }
+    }
+  ]
+}
