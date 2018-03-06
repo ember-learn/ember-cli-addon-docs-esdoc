@@ -1,0 +1,222 @@
+{
+  "jsonapi": {
+    "version": "1.0"
+  },
+  "data": [
+    {
+      "type": "module",
+      "id": "components/foo",
+      "attributes": {
+        "type": "module",
+        "file": "components/foo",
+        "functions": [],
+        "helpers": [],
+        "variables": []
+      },
+      "relationships": {
+        "classes": {
+          "data": []
+        },
+        "components": {
+          "data": [
+            {
+              "type": "component",
+              "id": "components/foo~Foo"
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "included": [
+    {
+      "type": "component",
+      "id": "components/foo~Foo",
+      "attributes": {
+        "name": "Foo",
+        "file": "components/foo",
+        "exportType": "default",
+        "description": "A foo class",
+        "lineNumber": 9,
+        "access": "public",
+        "isInterface": false,
+        "decorators": [],
+        "tags": [
+          {
+            "name": "class",
+            "value": "Foo"
+          }
+        ],
+        "fields": [
+          {
+            "name": "bar",
+            "description": "A property named bar with a tag",
+            "lineNumber": 27,
+            "access": "public",
+            "tags": [
+              {
+                "name": "taggg",
+                "value": ""
+              },
+              {
+                "name": "field",
+                "value": "bar"
+              },
+              {
+                "name": "default",
+                "value": "'123'"
+              }
+            ],
+            "file": "components/foo",
+            "type": "any",
+            "isStatic": false,
+            "decorators": []
+          }
+        ],
+        "methods": [
+          {
+            "name": "corge",
+            "description": "A method named corge with a tag",
+            "lineNumber": 52,
+            "access": "public",
+            "tags": [
+              {
+                "name": "taggg",
+                "value": ""
+              },
+              {
+                "name": "method",
+                "value": "corge"
+              }
+            ],
+            "file": "components/foo",
+            "returns": {
+              "type": "string",
+              "description": "the corge return value",
+              "properties": []
+            },
+            "params": [
+              {
+                "nullable": null,
+                "spread": false,
+                "optional": false,
+                "name": "foo",
+                "description": "a foo param",
+                "type": "string"
+              },
+              {
+                "nullable": null,
+                "spread": false,
+                "optional": false,
+                "name": "bar",
+                "description": "a bar param",
+                "type": "number"
+              }
+            ],
+            "isAsync": false,
+            "isGenerator": false,
+            "type": "method",
+            "isStatic": false,
+            "decorators": []
+          },
+          {
+            "name": "qux",
+            "description": "An action named qux",
+            "lineNumber": 62,
+            "access": "public",
+            "tags": [
+              {
+                "name": "action",
+                "value": "qux"
+              }
+            ],
+            "file": "components/foo",
+            "returns": null,
+            "params": [
+              {
+                "nullable": null,
+                "spread": false,
+                "optional": false,
+                "name": "foo",
+                "description": "a foo object",
+                "type": "Object"
+              }
+            ],
+            "isAsync": false,
+            "isGenerator": false,
+            "type": "method",
+            "isStatic": false,
+            "decorators": []
+          }
+        ],
+        "accessors": [
+          {
+            "name": "baz",
+            "description": "An acccesor named baz",
+            "lineNumber": 35,
+            "access": "public",
+            "tags": [
+              {
+                "name": "computed",
+                "value": "baz"
+              }
+            ],
+            "file": "components/foo",
+            "type": "any",
+            "isStatic": false,
+            "decorators": [],
+            "hasGetter": true,
+            "hasSetter": true
+          }
+        ],
+        "parentClassId": null,
+        "type": "component",
+        "arguments": [
+          {
+            "name": "foo",
+            "description": "An argument named foo",
+            "lineNumber": 17,
+            "access": "public",
+            "tags": [
+              {
+                "name": "argument",
+                "value": "foo"
+              },
+              {
+                "name": "default",
+                "value": "123"
+              }
+            ],
+            "file": "components/foo",
+            "type": "number",
+            "isStatic": false,
+            "decorators": []
+          }
+        ],
+        "yields": [
+          {
+            "nullable": null,
+            "spread": false,
+            "optional": false,
+            "name": "bar",
+            "description": "",
+            "type": "Hash"
+          },
+          {
+            "nullable": null,
+            "spread": false,
+            "optional": false,
+            "name": "bar.baz",
+            "description": "",
+            "type": "Component"
+          }
+        ]
+      },
+      "relationships": {
+        "parentClass": {
+          "data": null
+        }
+      }
+    }
+  ]
+}

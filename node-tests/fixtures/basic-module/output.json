@@ -1,0 +1,183 @@
+{
+  "jsonapi": {
+    "version": "1.0"
+  },
+  "data": [
+    {
+      "type": "module",
+      "id": "foo",
+      "attributes": {
+        "type": "module",
+        "file": "foo",
+        "functions": [
+          {
+            "name": "foo",
+            "description": "",
+            "lineNumber": 13,
+            "access": "public",
+            "tags": [],
+            "file": "foo",
+            "returns": {
+              "type": "string",
+              "description": "",
+              "properties": []
+            },
+            "params": [
+              {
+                "nullable": null,
+                "spread": false,
+                "optional": false,
+                "name": "bar",
+                "description": "a bar string",
+                "type": "string"
+              },
+              {
+                "nullable": null,
+                "spread": false,
+                "optional": true,
+                "defaultValue": "123",
+                "defaultRaw": 123,
+                "name": "baz",
+                "description": "a baz number with default value",
+                "type": "number"
+              }
+            ],
+            "isAsync": false,
+            "isGenerator": false,
+            "exportType": "default"
+          },
+          {
+            "name": "bar",
+            "description": "",
+            "lineNumber": 21,
+            "access": "public",
+            "tags": [
+              {
+                "name": "function",
+                "value": "bar"
+              }
+            ],
+            "file": "foo",
+            "returns": {
+              "type": "Array<boolean>",
+              "description": "",
+              "properties": []
+            },
+            "params": [],
+            "isAsync": false,
+            "isGenerator": false,
+            "exportType": "named"
+          },
+          {
+            "name": "quuz",
+            "description": "An async function named quuz",
+            "lineNumber": 40,
+            "access": "public",
+            "tags": [],
+            "file": "foo",
+            "returns": null,
+            "params": [],
+            "isAsync": true,
+            "isGenerator": false,
+            "exportType": "named"
+          },
+          {
+            "name": "corge",
+            "description": "A generator function named corge",
+            "lineNumber": 47,
+            "access": "public",
+            "tags": [],
+            "file": "foo",
+            "returns": null,
+            "params": [],
+            "isAsync": false,
+            "isGenerator": true,
+            "exportType": "named"
+          }
+        ],
+        "helpers": [],
+        "variables": [
+          {
+            "name": "baz",
+            "description": null,
+            "lineNumber": 25,
+            "access": "public",
+            "tags": [],
+            "file": "foo",
+            "type": "any",
+            "exportType": "named"
+          },
+          {
+            "name": "qux",
+            "description": "",
+            "lineNumber": 30,
+            "access": "public",
+            "tags": [],
+            "file": "foo",
+            "type": "any",
+            "exportType": "named"
+          },
+          {
+            "name": "quux",
+            "description": "",
+            "lineNumber": 35,
+            "access": "public",
+            "tags": [],
+            "file": "foo",
+            "type": "any",
+            "exportType": "named"
+          },
+          {
+            "name": "garply",
+            "description": "",
+            "lineNumber": 63,
+            "access": "public",
+            "tags": [],
+            "file": "foo",
+            "type": "any",
+            "exportType": "named"
+          }
+        ]
+      },
+      "relationships": {
+        "classes": {
+          "data": [
+            {
+              "type": "class",
+              "id": "foo~Foo"
+            }
+          ]
+        },
+        "components": {
+          "data": []
+        }
+      }
+    }
+  ],
+  "included": [
+    {
+      "type": "class",
+      "id": "foo~Foo",
+      "attributes": {
+        "name": "Foo",
+        "file": "foo",
+        "exportType": "named",
+        "description": "",
+        "lineNumber": 4,
+        "access": "public",
+        "isInterface": true,
+        "decorators": [],
+        "tags": [],
+        "fields": [],
+        "methods": [],
+        "accessors": [],
+        "parentClassId": null
+      },
+      "relationships": {
+        "parentClass": {
+          "data": null
+        }
+      }
+    }
+  ]
+}
