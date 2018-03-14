@@ -7,9 +7,9 @@
       "type": "module",
       "id": "helpers/foo",
       "attributes": {
-        "type": "module",
         "file": "helpers/foo",
-        "functions": [
+        "functions": [],
+        "helpers": [
           {
             "name": "helper",
             "description": "",
@@ -50,7 +50,6 @@
             "exportType": "named"
           }
         ],
-        "helpers": [],
         "variables": []
       },
       "relationships": {
