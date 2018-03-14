@@ -7,7 +7,6 @@
       "type": "module",
       "id": "foo",
       "attributes": {
-        "type": "module",
         "file": "foo",
         "functions": [],
         "helpers": [],
@@ -119,7 +118,6 @@
             ],
             "isAsync": false,
             "isGenerator": false,
-            "type": "method",
             "isStatic": false,
             "decorators": []
           },
@@ -134,7 +132,6 @@
             "params": [],
             "isAsync": true,
             "isGenerator": false,
-            "type": "method",
             "isStatic": true,
             "decorators": []
           },
@@ -149,7 +146,6 @@
             "params": [],
             "isAsync": false,
             "isGenerator": true,
-            "type": "method",
             "isStatic": false,
             "decorators": []
           }

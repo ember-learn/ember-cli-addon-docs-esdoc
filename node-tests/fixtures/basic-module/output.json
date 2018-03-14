@@ -7,7 +7,6 @@
       "type": "module",
       "id": "foo",
       "attributes": {
-        "type": "module",
         "file": "foo",
         "functions": [
           {

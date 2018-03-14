@@ -7,7 +7,6 @@
       "type": "module",
       "id": "components/foo",
       "attributes": {
-        "type": "module",
         "file": "components/foo",
         "functions": [],
         "helpers": [],
@@ -115,7 +114,6 @@
             ],
             "isAsync": false,
             "isGenerator": false,
-            "type": "method",
             "isStatic": false,
             "decorators": []
           },
@@ -144,7 +142,6 @@
             ],
             "isAsync": false,
             "isGenerator": false,
-            "type": "method",
             "isStatic": false,
             "decorators": []
           }
@@ -170,7 +167,6 @@
           }
         ],
         "parentClassId": null,
-        "type": "component",
         "arguments": [
           {
             "name": "foo",
