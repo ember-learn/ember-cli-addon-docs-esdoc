@@ -50,12 +50,7 @@
             "description": "",
             "lineNumber": 21,
             "access": "public",
-            "tags": [
-              {
-                "name": "function",
-                "value": "bar"
-              }
-            ],
+            "tags": [],
             "file": "foo",
             "returns": {
               "type": "Array<boolean>",
@@ -92,9 +87,19 @@
             "isAsync": false,
             "isGenerator": true,
             "exportType": "named"
+          },
+          {
+            "access": "public",
+            "description": "",
+            "exportType": "named",
+            "file": "foo",
+            "lineNumber": 63,
+            "name": "garply",
+            "params": [],
+            "returns": null,
+            "tags": []
           }
         ],
-        "helpers": [],
         "variables": [
           {
             "name": "baz",
@@ -120,16 +125,6 @@
             "name": "quux",
             "description": "",
             "lineNumber": 35,
-            "access": "public",
-            "tags": [],
-            "file": "foo",
-            "type": "any",
-            "exportType": "named"
-          },
-          {
-            "name": "garply",
-            "description": "",
-            "lineNumber": 63,
             "access": "public",
             "tags": [],
             "file": "foo",

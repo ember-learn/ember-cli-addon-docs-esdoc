@@ -8,19 +8,13 @@
       "id": "helpers/foo",
       "attributes": {
         "file": "helpers/foo",
-        "functions": [],
-        "helpers": [
+        "functions": [
           {
             "name": "helper",
             "description": "",
             "lineNumber": 7,
             "access": "public",
-            "tags": [
-              {
-                "name": "function",
-                "value": "helper"
-              }
-            ],
+            "tags": [],
             "file": "helpers/foo",
             "returns": {
               "type": "string",
