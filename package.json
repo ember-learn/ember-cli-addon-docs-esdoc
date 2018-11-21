@@ -25,6 +25,7 @@
     "esdoc": "pzuraq/esdoc#015a342",
     "esdoc-accessor-plugin": "^1.0.0",
     "esdoc-ecmascript-proposal-plugin": "^1.0.0",
+    "esdoc-typescript-plugin": "^1.0.1",
     "fs-extra": "^5.0.0",
     "json-api-serializer": "^1.11.0",
     "lodash": "^4.17.5",
