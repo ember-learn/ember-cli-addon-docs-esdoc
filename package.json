@@ -28,6 +28,7 @@
     "fs-extra": "^5.0.0",
     "json-api-serializer": "^1.11.0",
     "lodash": "^4.17.5",
+    "resolve": "^1.11.1",
     "tmp": "^0.0.33",
     "walk-sync": "^0.3.2"
   },
