@@ -1,6 +1,6 @@
 {
   "name": "ember-cli-addon-docs-esdoc",
-  "version": "0.2.2",
+  "version": "0.2.3",
   "description": "ESDoc plugin for ember-cli-addon-docs",
   "keywords": [
     "ember-addon",
