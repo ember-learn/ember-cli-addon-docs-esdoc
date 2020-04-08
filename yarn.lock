@@ -2679,6 +2679,13 @@ esdoc-ecmascript-proposal-plugin@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/esdoc-ecmascript-proposal-plugin/-/esdoc-ecmascript-proposal-plugin-1.0.0.tgz#390dc5656ba8a2830e39dba3570d79138df2ffd9"
 
+esdoc-typescript-plugin@^1.0.1:
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/esdoc-typescript-plugin/-/esdoc-typescript-plugin-1.0.1.tgz#d4b929677f2ee5587a86ec70e766537040b98662"
+  integrity sha512-QV9rdis5PkypVK1fh2wuESZPQZUVjTwt4hj97Pivb9M8wGPMOTxYu5ofkyGWm3xgNL+K0VxZY6TGEO07kfGAtg==
+  dependencies:
+    typescript "^2.8.3"
+
 esdoc@pzuraq/esdoc#015a342:
   version "1.0.4"
   resolved "https://codeload.github.com/pzuraq/esdoc/tar.gz/015a3426b2e53b2b0270a9c00133780db3f1d144"
@@ -6646,6 +6653,11 @@ type-is@~1.6.15:
 typedarray@^0.0.6:
   version "0.0.6"
   resolved "https://registry.yarnpkg.com/typedarray/-/typedarray-0.0.6.tgz#867ac74e3864187b1d3d47d996a78ec5c8830777"
+
+typescript@^2.8.3:
+  version "2.9.2"
+  resolved "https://registry.yarnpkg.com/typescript/-/typescript-2.9.2.tgz#1cbf61d05d6b96269244eb6a3bce4bd914e0f00c"
+  integrity sha512-Gr4p6nFNaoufRIY4NMdpQRNmgxVIGMs4Fcu/ujdYk3nAZqk7supzBE9idmvfZIlH/Cuj//dvi+019qEue9lV0w==
 
 uc.micro@^1.0.1, uc.micro@^1.0.5:
   version "1.0.5"
