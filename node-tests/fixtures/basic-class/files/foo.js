@@ -1,6 +1,4 @@
-function decorate() {
-
-}
+function decorate() {}
 
 /**
   A foo class

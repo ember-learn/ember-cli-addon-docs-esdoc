@@ -32,12 +32,15 @@ module.exports = {
         'testem.js',
         'blueprints/*/index.js',
         'config/**/*.js',
+        'lib/**/*.js',
+        'node-tests/*.js',
         'tests/dummy/config/**/*.js',
       ],
       excludedFiles: [
         'addon/**',
         'addon-test-support/**',
         'app/**',
+        'node-tests/fixtures/**',
         'tests/dummy/app/**',
       ],
       parserOptions: {
@@ -49,6 +52,13 @@ module.exports = {
       },
       plugins: ['node'],
       extends: ['plugin:node/recommended'],
+      globals: {
+        describe: true,
+        it: true,
+      },
+      rules: {
+        'node/no-unpublished-require': 'off',
+      },
     },
   ],
 };

@@ -13,16 +13,21 @@ const mockProject = {
   ui: {
     //eslint-disable-next-line
     writeWarnLine: console.warn
-  }
+  },
 };
 
-describe('ember-cli-addon-docs-esdoc | fixture test', function() {
-  let fixtureDirectories = fs.readdirSync(path.join(__dirname,'fixtures'));
+describe('ember-cli-addon-docs-esdoc | fixture test', function () {
+  let fixtureDirectories = fs.readdirSync(path.join(__dirname, 'fixtures'));
 
   for (let dir of fixtureDirectories) {
-    it(dir, function() {
-      let expectedOutput = fs.readJsonSync(path.join(__dirname, 'fixtures', dir, 'output.json'));
-      let output = generateESDocJsonApi(path.resolve(__dirname, 'fixtures', dir, 'files'), mockProject);
+    it(dir, function () {
+      let expectedOutput = fs.readJsonSync(
+        path.join(__dirname, 'fixtures', dir, 'output.json')
+      );
+      let output = generateESDocJsonApi(
+        path.resolve(__dirname, 'fixtures', dir, 'files'),
+        mockProject
+      );
 
       expect(JSON.parse(JSON.stringify(output))).to.deep.equal(expectedOutput);
     });
