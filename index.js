@@ -1,7 +1,7 @@
 'use strict';
 
 module.exports = {
-  name: 'ember-cli-addon-docs-esdoc',
+  name: require('./package').name,
 
   createDocsGenerator(inputTree, options) {
     const Generator = require('./lib/broccoli/generator');
