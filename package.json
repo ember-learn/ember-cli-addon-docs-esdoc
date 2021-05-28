@@ -28,15 +28,15 @@
     "esdoc-typescript-plugin": "^1.0.1",
     "fs-extra": "^5.0.0",
     "json-api-serializer": "^1.11.0",
-    "lodash": "^4.17.5",
-    "resolve": "^1.11.1",
-    "tmp": "^0.0.33",
-    "walk-sync": "^0.3.2"
+    "lodash": "^4.17.21",
+    "resolve": "^1.20.0",
+    "tmp": "^0.2.1",
+    "walk-sync": "^2.2.0"
   },
   "devDependencies": {
-    "babel-eslint": "^8.2.2",
-    "broccoli-asset-rev": "^2.4.5",
-    "chai": "^4.1.2",
+    "babel-eslint": "^10.1.0",
+    "broccoli-asset-rev": "^3.0.0",
+    "chai": "^4.3.4",
     "ember-ajax": "^3.0.0",
     "ember-cli": "~3.0.0",
     "ember-cli-dependency-checker": "^2.0.0",
