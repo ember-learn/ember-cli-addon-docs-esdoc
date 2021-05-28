@@ -1,7 +1,9 @@
 /**
   @interface
 */
-export class Foo {}
+export class Foo {
+
+}
 
 /**
   @param {string} bar a bar string
@@ -42,7 +44,7 @@ export async function quuz(foo, bar) {
 /**
   A generator function named corge
 */
-export function* corge(foo, bar) {
+export function *corge(foo, bar) {
   yield foo + bar;
 }
 
@@ -51,7 +53,7 @@ export function* corge(foo, bar) {
  */
 function makeMacro() {
   return function macro() {
-    // do a think
+     // do a think
   };
 }
 
