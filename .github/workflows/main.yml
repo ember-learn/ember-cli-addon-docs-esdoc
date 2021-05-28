@@ -1,0 +1,43 @@
+name: CI Build
+
+on:
+  pull_request: {}
+  push:
+    branches:
+      - master
+    tags:
+      - v*
+
+jobs:
+  test:
+    name: Tests
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2
+      - uses: volta-cli/action@v1
+        with:
+          node-version: 12.x
+      - run: yarn install --frozen-lockfile
+      - run: yarn lint
+      - run: yarn test
+
+  floating-dependencies:
+    name: "Floating Dependencies"
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2
+      - uses: volta-cli/action@v1
+        with:
+          node-version: 12.x
+      - run: yarn install --no-lockfile
+      - run: yarn test
+        
+  automerge:
+    needs: [test, floating-dependencies]
+    runs-on: ubuntu-latest
+    steps:
+      - uses: fastify/github-action-merge-dependabot@v2.0.0
+        with:
+          github-token: ${{secrets.GITHUB_TOKEN}}        
