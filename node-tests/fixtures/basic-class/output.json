@@ -204,11 +204,6 @@
           }
         ],
         "parentClassId": null
-      },
-      "relationships": {
-        "parentClass": {
-          "data": null
-        }
       }
     }
   ]
