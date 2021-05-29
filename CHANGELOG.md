@@ -1,3 +1,11 @@
+## v0.4.0 (2021-05-29)
+
+#### :boom: Breaking Change
+* [#31](https://github.com/ember-learn/ember-cli-addon-docs-esdoc/pull/31) Update json-api-serializer to 2.x ([@rwwagner90](https://github.com/rwwagner90))
+
+#### Committers: 1
+- Robert Wagner ([@rwwagner90](https://github.com/rwwagner90))
+
 ## v0.3.0 (2021-05-28)
 
 #### :boom: Breaking Change
